@@ -1,0 +1,133 @@
+{
+  "name": "Level 1",
+  "level_index": 1,
+  "area": {
+    "width": 550,
+    "height": 400
+  },
+  "player": {
+    "size": 12,
+    "speed": 3.0,
+    "spawn": {
+      "x": 86.5,
+      "y": 174.5
+    }
+  },
+  "coins_required": 0,
+  "play_area": [
+    {
+      "x": 52,
+      "y": 127,
+      "w": 72,
+      "h": 145
+    },
+    {
+      "x": 152,
+      "y": 152,
+      "w": 245,
+      "h": 95
+    },
+    {
+      "x": 377,
+      "y": 127,
+      "w": 48,
+      "h": 25
+    },
+    {
+      "x": 125,
+      "y": 247,
+      "w": 47,
+      "h": 25
+    },
+    {
+      "x": 425,
+      "y": 127,
+      "w": 72,
+      "h": 145
+    }
+  ],
+  "walls": [],
+  "checkpoints": [
+    {
+      "id": "check1",
+      "rect": {
+        "x": 52,
+        "y": 127,
+        "w": 72,
+        "h": 145
+      },
+      "is_spawn": true,
+      "respawn": {
+        "x": 86.5,
+        "y": 174.5
+      }
+    },
+    {
+      "id": "check2",
+      "rect": {
+        "x": 425,
+        "y": 127,
+        "w": 72,
+        "h": 145
+      },
+      "is_goal": true
+    }
+  ],
+  "coins": [],
+  "balls": [
+    {
+      "radius": 6,
+      "motion": {
+        "type": "linear_bounce",
+        "axis": "x",
+        "min": 156,
+        "max": 395,
+        "fixed": 238,
+        "speed": 6.64,
+        "phase": 0.0
+      }
+    },
+    {
+      "radius": 6,
+      "motion": {
+        "type": "linear_bounce",
+        "axis": "x",
+        "min": 156,
+        "max": 395,
+        "fixed": 213,
+        "speed": 6.64,
+        "phase": 0.5
+      }
+    },
+    {
+      "radius": 6,
+      "motion": {
+        "type": "linear_bounce",
+        "axis": "x",
+        "min": 156,
+        "max": 395,
+        "fixed": 188,
+        "speed": 6.64,
+        "phase": 0.0
+      }
+    },
+    {
+      "radius": 6,
+      "motion": {
+        "type": "linear_bounce",
+        "axis": "x",
+        "min": 156,
+        "max": 395,
+        "fixed": 163,
+        "speed": 6.64,
+        "phase": 0.5
+      }
+    }
+  ],
+  "source": {
+    "swf_frame": 61,
+    "enemies_sprite": 150,
+    "ball_period_frames": 72,
+    "notes": "Trayectorias extraidas de las matrices PlaceObject del swf2xml. 4 bolas, rebote horizontal en x[156,395], speed 6.64 px/frame, filas y={238,213,188,163}, fases {0,0.5,0,0.5}."
+  }
+}
