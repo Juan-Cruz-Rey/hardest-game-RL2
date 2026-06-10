@@ -1,1 +1,28 @@
-/decompiled
+# Decompilado del SWF (generado localmente con JPEXS, no se versiona)
+/decompiled/
+
+# Herramientas externas descargadas (JPEXS ffdec, ~19MB) y artefactos sueltos.
+# Los scripts del proyecto viven en scripts/ (versionado), no aca.
+/tools/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.pytest_cache/
+
+# RL / training artifacts
+*.zip
+!tools/ffdec*.zip
+runs/
+checkpoints/
+*.log
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
